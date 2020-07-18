@@ -13,7 +13,7 @@ struct NoteDetail: View {
     var body: some View{
         //leadingは左揃え
         //VerticalStack
-        VStack(alignment: .leading){
+        VStack(alignment: .trailing){
             //HorizontalStack
             HStack{
                 Text(note[0]).font(.largeTitle).fontWeight(.thin)
