@@ -16,8 +16,8 @@ struct Collection: View {
                 ForEach(1..<6){_ in
                     Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                     Text(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/)
-                    }.frame(width: 100.0, height: 100.0).accentColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/).border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
-                    }
+                    }.frame(width: 100.0, height: 100.0).border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                }.padding(.bottom, 8.0)
                 Spacer()
                 }
             }
@@ -30,5 +30,5 @@ struct Collection_Previews: PreviewProvider {
         Collection()
             .accentColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
             .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
-}
+    }
 }
